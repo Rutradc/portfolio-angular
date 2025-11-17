@@ -1,158 +1,87 @@
 
 <title>Portfolio</title>
-<style>
-    body {
-      --bg-color: #0b0f19;
-      --text-color: #e4e7eb;
-      --accent-color: #4fc3f7;
-      --card-bg: #151c2e;
-      --muted-text: #9aa0ab;
-      margin: 0;
-      padding: 0;
-      background-color: #0b0f19;
-      color: #e4e7eb;
-      font-family: "Inter", Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      color: #9aa0ab;
-      font-size: 1.15rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      border-left: 4px solid #4fc3f7;
-      padding-left: 10px;
-      font-size: 1.5rem;
-      margin-bottom: 25px;
-    }
-
-    /* Compétences */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill {
-      background-color: #151c2e;
-      color: #4fc3f7;
-      padding: 10px 16px;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .skill:hover {
-      background-color: #4fc3f7;
-      color: #0b0f19;
-    }
-
-    /* Projets */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .project {
-      background-color: #151c2e;
-      padding: 20px;
-      border-radius: 8px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-    }
-
-    .project h3 {
-      color: #4fc3f7;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      color: #9aa0ab;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #9aa0ab;
-      border-top: 1px solid #1d2435;
-      margin-top: 60px;
-    }
-
-    a {
-      color: #4fc3f7;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
   <body>
   <header>
-    <h1>[Ton Nom]</h1>
-    <p>Développeur web passionné par la création d’expériences modernes, accessibles et performantes.</p>
+    <h1>Arthur De Clerck</h1>
+    <p>Développeur full-stack junior passionné par la création d'expériences modernes, accessibles et performantes.</p>
   </header>
 
   <section id="technos">
     <h2>Compétences & Technologies</h2>
     <div class="skills">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Node.js</div>
-      <div class="skill">Tailwind</div>
-      <div class="skill">Git</div>
+      <div class="skills">
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Spring</div>
+        <div class="skill">Angular</div>
+        <div class="skill">Next</div>
+        <div class="skill">ABP</div>
+      </div>
+      <div class="skills">
+        <div class="skill">Maven</div>
+        <div class="skill">Hibernate</div>
+        <div class="skill">Tomcat</div>
+        <div class="skill">Tailwind</div>
+        <div class="skill">Git</div>
+      </div>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C#</div>
+        <div class="skill">Java</div>
+        <div class="skill">Typescript</div>
+        <div class="skill">PHP</div>
+      </div>
+      <div class="skills">
+        <div class="skill">JSON/XML</div>
+      </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Projets récents</h2>
+    <h2>Projets en solo</h2>
     <div class="projects">
       <div class="project">
-        <h3>Application To‑Do</h3>
+        <h3>Application To-Do</h3>
         <p>Application web moderne de gestion de tâches construite avec React et stockage local.</p>
+        <p><span class="status-badge status-wip">WIP</span></p>
       </div>
       <div class="project">
         <h3>Portfolio personnel</h3>
-        <p>Ce site de présentation open source alliant design minimaliste et performance.</p>
+        <p><b>Le site sur lequel vous êtes en ce moment.</b></p>
+        <p>Simple application front-end codée en Angular faisant office de site vitrine.</p>
+
+        <a href="https://github.com/Rutradc/portfolio-angular" 
+          target="_blank"
+          class="project-link">
+          <i class="fab fa-github"></i> Voir le repo
+        </a>
+        <p><span class="status-badge status-test">En test</span></p>
       </div>
+    </div>
+  </section>
+
+  <section id="schoolProjects">
+    <h2>Projets sur lesquels j'ai travaillé</h2>
+    <div class="projects">
       <div class="project">
-        <h3>API Node.js</h3>
-        <p>Backend REST complet avec authentification JWT et base MongoDB.</p>
+        <h3>Site e-commerce Cool skaters</h3>
+        <p>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding.</p>
+        <p>Ce projet a été codé pendant ma formation avec deux autres personnes.</p>
+        <!-- <p><span class="status-badge status-deploiement">En déploiement</span></p> -->
+         <a href="https://springSkate.arthur-declerck.be" 
+          target="_blank"
+          class="project-link">
+          Voir la demo
+        </a>
+        <p><span class="status-badge status-test">En test</span></p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 [Ton Nom] — <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+    <p>© 2025 Arthur De Clerck — <a href="https://github.com/Rutradc" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/artdeclerck/" target="_blank">LinkedIn</a> | <a href="assets/DE_CLERCK_Arthur_CV.pdf" target="_blank">CV</a></p>
   </footer>
 </body>
 
