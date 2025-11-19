@@ -1,0 +1,32 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        // ---- BACKGROUNDS (on garde Default Dark Modern) ----
+        "editor.background": "#1e1e1e",
+        "sideBar.background": "#252526",
+        "activityBar.background": "#2c2c2c",
+        "statusBar.background": "#2c2c2c",
+        "tab.inactiveBackground": "#2d2d2d",
+        "panel.background": "#1e1e1e",
+
+        // ---- ANGULAR COLOR ACCENTS ----
+        "activityBar.foreground": "#DD0031",
+        "activityBar.activeBorder": "#DD0031",
+
+        "sideBarTitle.foreground": "#DD0031",
+        "statusBar.foreground": "#DD0031",
+
+        "tab.activeBorderTop": "#DD0031",
+        "tab.activeForeground": "#FF4A70",
+
+        // ---- HOVER / MENUS ----
+        "editorHoverWidget.background": "#2d2d2d",
+        "editorSuggestWidget.highlightForeground": "#DD0031",
+
+        // ---- TERMINAL ----
+        "terminalCursor.foreground": "#DD0031",
+        "terminal.ansiRed": "#DD0031",
+        "terminal.ansiBrightRed": "#FF4A70",
+    }
+
+}
