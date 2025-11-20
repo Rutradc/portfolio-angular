@@ -1,0 +1,12 @@
+name: Potfolio-angular
+
+services:
+
+  portfolio-angular:
+      container_name: portfolio-angular
+      build: .
+      ports:
+        - "4200:80"
+      environment:
+        VIRTUAL_HOST: www.arthur-declerck.be
+        LETSENCRYPT_HOST: www.arthur-declerck.be

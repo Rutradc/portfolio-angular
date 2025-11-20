@@ -8,4 +8,4 @@ RUN ng build
 FROM nginx:alpine3.22
 WORKDIR /usr/share/nginx/html
 COPY --from=build /src/dist/portfolio-angular/browser .
-EXPOSE 80
+EXPOSE 4200
