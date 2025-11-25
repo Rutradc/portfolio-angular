@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SkillListItem } from './skill-list/SkillListItem';
 import { SkillList } from "./skill-list/skill-list";
+import { GoToButton } from "./buttons/go-to-button/go-to-button";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SkillList],
+  imports: [RouterOutlet, SkillList, GoToButton],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { SkillListItem } from './SkillListItem';
-import { Skill } from "../skillList/skill/skill";
+import { Skill } from './skill/skill';
+
 
 @Component({
   selector: 'app-skill-list',
