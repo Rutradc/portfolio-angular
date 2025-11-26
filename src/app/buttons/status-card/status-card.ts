@@ -27,7 +27,7 @@ export class StatusCard implements OnInit{
   ngOnInit(): void {
     switch (this.status) {
       case ProjectStatus.WIP:
-        this.updateCSS('rgba(34, 197, 94, 0.10)', 'rgba(34, 197, 94, 1)');
+        this.updateCSS('rgba(119, 47, 253, 0.10)', 'rgba(119, 47, 253, 1)');
         this.statusMessage = "Work in progress";
         break;
       case ProjectStatus.TEST:
