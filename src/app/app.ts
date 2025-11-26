@@ -3,14 +3,19 @@ import { RouterOutlet } from '@angular/router';
 import { SkillListItem } from './skill-list/SkillListItem';
 import { SkillList } from "./skill-list/skill-list";
 import { GoToButton } from "./buttons/go-to-button/go-to-button";
+import { StatusCard } from "./buttons/status-card/status-card";
+import { ProjectStatus } from './buttons/status-card/status-card';
+import { Git, GitButton } from "./buttons/git-button/git-button";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SkillList, GoToButton],
+  imports: [RouterOutlet, SkillList, GoToButton, StatusCard, GitButton],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+  ProjectStatus = ProjectStatus;
+  Git = Git;
   skillLists : SkillListItem[][] = [
     [
       {

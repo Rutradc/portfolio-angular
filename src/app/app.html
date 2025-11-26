@@ -15,20 +15,20 @@
     <div class="projects">
       <div class="project">
         <h3>Application To-Do</h3>
-        <p>Application web moderne de gestion de tâches construite avec React et stockage local.</p>
-        <p><span class="status-badge status-wip">WIP</span></p>
+        <span>Application web moderne de gestion de tâches construite avec React et stockage local.</span>
+        <app-status-card [status]="ProjectStatus.WIP"></app-status-card>
       </div>
       <div class="project">
         <h3>Portfolio personnel</h3>
-        <p><b>Le site sur lequel vous êtes en ce moment.</b></p>
-        <p>Simple application front-end codée en Angular faisant office de site vitrine.</p>
+        <span><b>Le site sur lequel vous êtes en ce moment.</b></span>
+        <span>Simple application front-end codée en Angular faisant office de site vitrine.</span>
 
         <a href="https://github.com/Rutradc/portfolio-angular" 
           target="_blank"
           class="project-link">
-          <i class="fab fa-github"></i> Voir le répertoire
+          <i class="fab fa-github"></i> Voir sur GitHub
         </a>
-        <p><span class="status-badge status-test">En test</span></p>
+        <app-status-card [status]="ProjectStatus.DEPLOYED"></app-status-card>
       </div>
     </div>
   </section>
@@ -38,16 +38,10 @@
     <div class="projects">
       <div class="project">
         <h3>Site e-commerce Cool skaters</h3>
-        <p>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding.</p>
-        <p>Ce projet a été codé pendant ma formation avec deux autres personnes.</p>
-        <!-- <p><span class="status-badge status-deploiement">En déploiement</span></p> -->
-         <app-go-to-button [message]="'Démo'" [link]= "'https://springSkate.arthur-declerck.be'"></app-go-to-button>
-         <!-- <a href="https://springSkate.arthur-declerck.be" 
-          target="_blank"
-          class="project-link">
-          Voir la demo
-        </a> -->
-        <p><span class="status-badge status-test">En test</span></p>
+        <span>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding.</span>
+        <span>Ce projet a été codé pendant ma formation avec deux autres personnes.</span>
+        <app-go-to-button [message]="'Démo'" [link]= "'https://springSkate.arthur-declerck.be'"></app-go-to-button>
+        <app-status-card [status]="ProjectStatus.TEST"></app-status-card>
       </div>
     </div>
   </section>

@@ -50,6 +50,9 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .project:hover {
@@ -63,7 +66,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.project p {
+.project span {
     color: var(--muted-text);
     font-size: 0.95rem;
 }
@@ -98,6 +101,7 @@ a:hover {
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.2s ease;
+  width: fit-content;
 }
 
 .project-link:hover {
@@ -106,34 +110,4 @@ a:hover {
 
 .project-link i {
   font-size: 1.2rem;
-}
-
-.status-badge {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.2px;
-  width: fit-content;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
-}
-
-/* Variantes de couleur */
-.status-deploiement {
-  color: #064e3b;              /* texte sombre */
-  background: #bbf7d0;        /* vert pâle */
-  border: 1px solid rgba(6,78,59,0.08);
-}
-
-.status-test {
-  color: #78350f;
-  background: #ffedd5;        /* orange pâle */
-  border: 1px solid rgba(120,53,15,0.08);
-}
-
-.status-wip {
-  color: #231155;
-  background: #6026ff;        /* gris-bleu pâle */
-  border: 1px solid rgba(15,23,42,0.06);
 }
