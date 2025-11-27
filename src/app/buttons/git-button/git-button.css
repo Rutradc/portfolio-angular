@@ -2,11 +2,43 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   padding: 2px .5rem; /* 8px*/
-  cursor: default;
   border-radius: 0.375rem; /* 6px */
   outline: none;
   width: fit-content;
   background-color: var(--bg-color);
   color: var(--text-color);
   border: 1px var(--text-color) solid;
+}
+
+.git-button i {
+    font-size: 1.2rem;
+}
+
+a {
+    width: fit-content;
+    text-decoration: none;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px 12px;
+  background: #1e293b;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  width: fit-content;
+}
+
+.project-link:hover {
+  background: #334155;
+}
+
+.project-link i {
+  font-size: 1.2rem;
 }

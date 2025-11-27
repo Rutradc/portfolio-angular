@@ -7,9 +7,9 @@ import { ChangeDetectorRef, Component, HostBinding, Input, OnInit } from '@angul
   styleUrl: './git-button.css',
 })
 export class GitButton implements OnInit{
+  Git = Git;
   @Input() git : Git = Git.GitHub;
   @Input() link : string = '';
-  gitIcon : string = 'fab fa-github';
 
   @HostBinding('style.--bg-color') bgColor = 'rgba(24, 23, 23, 1)';
   @HostBinding('style.--text-color') textColor = 'rgba(24, 23, 23, 0.10)';
@@ -27,11 +27,9 @@ export class GitButton implements OnInit{
   ngOnInit(): void {
     switch (this.git){
       case Git.GitHub:
-        this.gitIcon = 'fab fa-github';
         this.updateCSS('rgba(24, 23, 23, 1)', 'rgba(24, 23, 23, 0.10)');
         break;
       case Git.GitLab:
-        this.gitIcon = 'fa-brands fa-gitlab';
         this.updateCSS('rgba(252, 109, 38, 1)', 'rgba(252, 109, 38, 0.10)');
         break;
       default:

@@ -1,4 +1,15 @@
 <!-- From Uiverse.io by kamehame-ha --> 
-<a href="{link}" target="_blank">
-    <div class="git-button"><i class="{gitIcon}"></i>Voir sur {{git}}</div>
-</a>
+
+@if(git == Git.GitHub){
+    <a href="{{link}}" target="_blank">
+        <div class="git-button"><i class="fab fa-github"></i>Voir sur GitHub</div>
+    </a>
+}
+@else {
+    <a href="{{link}}" target="_blank">
+        <div class="git-button">
+            <i class="fa-brands fa-gitlab"></i>
+            Voir sur GitLab
+        </div>
+    </a>
+}
