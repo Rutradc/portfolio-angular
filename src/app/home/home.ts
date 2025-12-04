@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { Tech, TechCard, TechType } from '../buttons/tech-card/tech-card';
 import { ProjectStatus, StatusCard } from '../buttons/status-card/status-card';
 import { GoToButton } from '../buttons/go-to-button/go-to-button';
 import { SkillList } from '../skill-list/skill-list';
 import { Git } from '../buttons/git-button/git-button';
 import { SkillListItem } from '../skill-list/SkillListItem';
+import { GoToRouteButton } from "../buttons/go-to-route-button/go-to-route-button";
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, SkillList, GoToButton, StatusCard, TechCard],
+  imports: [SkillList, GoToButton, StatusCard, TechCard, GoToRouteButton],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
