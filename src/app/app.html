@@ -1,56 +1,11 @@
 
-<title>Portfolio Arthur De Clerck</title>
-  <body>
-  <header>
-    <h1>Arthur De Clerck</h1>
-    <p>Développeur full-stack junior passionné par la création d'expériences modernes, accessibles et performantes.</p>
-  </header>
-
-  <section id="technos">
-    <app-skill-list [title]="'Compétences & Technologies'" [skillLists]="skillLists"></app-skill-list>
-  </section>
-
-  <section id="projects">
-    <h2>Projets en solo</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Application To-Do</h3>
-        <span>Application web moderne de gestion de tâches construite avec React et stockage local.</span>
-        <app-status-card [status]="ProjectStatus.WIP"></app-status-card>
-      </div>
-      <div class="project">
-        <h3>Portfolio personnel</h3>
-        <span><b>Le site sur lequel vous êtes en ce moment.</b></span>
-        <span>Simple application front-end codée en Angular faisant office de site vitrine.</span>
-
-        <a href="https://github.com/Rutradc/portfolio-angular" 
-          target="_blank"
-          class="project-link">
-          <i class="fab fa-github"></i> Voir sur GitHub
-        </a>
-        <!-- <app-git-button [git]="Git.GitLab" [link]="'https://github.com/Rutradc/portfolio-angular'"></app-git-button> -->
-        <app-status-card [status]="ProjectStatus.DEPLOYED"></app-status-card>
-      </div>
-    </div>
-  </section>
-
-  <section id="schoolProjects">
-    <h2>Projets sur lesquels j'ai travaillé</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Site e-commerce Cool skaters</h3>
-        <span>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding.</span>
-        <span>Ce projet a été codé pendant ma formation avec deux autres personnes.</span>
-        <app-go-to-button [message]="'Démo'" [link]= "'https://springSkate.arthur-declerck.be'"></app-go-to-button>
-        <app-status-card [status]="ProjectStatus.TEST"></app-status-card>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Arthur De Clerck — <a href="https://github.com/Rutradc" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/artdeclerck/" target="_blank">LinkedIn</a> | <a href="assets/DE_CLERCK_Arthur_CV.pdf" target="_blank">CV</a></p>
-  </footer>
-</body>
-
+<header>
+  <h1>Arthur De Clerck</h1>
+  <p>Développeur full-stack junior passionné par la création d'expériences modernes, accessibles et performantes.</p>
+</header>
 
 <router-outlet />
+
+<footer>
+  <p>© 2025 Arthur De Clerck — <a href="https://github.com/Rutradc" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/artdeclerck/" target="_blank">LinkedIn</a> | <a href="assets/DE_CLERCK_Arthur_CV.pdf" target="_blank">CV</a></p>
+</footer>
