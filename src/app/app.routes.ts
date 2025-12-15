@@ -8,10 +8,10 @@ export const routes: Routes = [
         path:'',
         component: Home
     },
-    {
-        path:'projects/springskate',
-        loadComponent: () => import('./projects/springskate/springskate').then(c => c.Springskate),
-    },
+    // {
+    //     path:'projects/springskate',
+    //     loadComponent: () => import('./projects/springskate/springskate').then(c => c.Springskate),
+    // },
     {
         path:'**',
         redirectTo: ''
