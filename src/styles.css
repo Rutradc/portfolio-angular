@@ -17,8 +17,8 @@ body {
 
 section {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+    margin: 4rem auto;
+    padding: 0 1rem;
 }
 
 h2 {
@@ -31,4 +31,10 @@ h2 {
 a {
     color: var(--accent-color);
     text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

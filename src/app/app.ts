@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component, signal, OnInit } from '@angular/core';
+import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
+import { CommonButton } from "./buttons/common-button/common-button";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonButton],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  
+  constructor(private router: Router){}
+
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    );
+  }
 }

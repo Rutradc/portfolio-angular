@@ -1,8 +1,57 @@
 
-<header>
-  <h1>Arthur De Clerck</h1>
-  <p>Développeur full-stack junior passionné par la création d'expériences modernes, accessibles et performantes.</p>
+<header class="site-header">
+  <div class="header-content">
+
+    <div class="header-text">
+      <h1>Arthur De Clerck</h1>
+      <p>
+        Développeur full-stack junior passionné par la création d'expériences
+        modernes, accessibles et performantes.
+      </p>
+    </div>
+
+    <div class="header-actions">
+      <!-- <a href="assets/DE_CLERCK_Arthur_CV.pdf"
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener">
+        Voir mon CV
+      </a> -->
+      <app-common-button [text]="'Voir mon CV'" [link]="'assets/DE_CLERCK_Arthur_CV.pdf'"></app-common-button>
+
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:arthur.declerck.work@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            arthur.declerck.work@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:+32474619624">
+            <i class="fa-solid fa-phone"></i>
+            +32 474 61 96 24
+          </a>
+        </li>
+      </ul>
+      <ul class="contact-list">
+        <li>
+          <a href="https://www.linkedin.com/in/arthurdeclerck" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/arthurdeclerck" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 </header>
+
 
 <router-outlet />
 
