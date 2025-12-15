@@ -1,6 +1,6 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
-import { CommonButton } from "./buttons/common-button/common-button";
+import { CommonButton, Icon } from "./buttons/common-button/common-button";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,8 @@ import { CommonButton } from "./buttons/common-button/common-button";
 })
 export class App {
   constructor(private router: Router){}
+
+  Icon = Icon;
 
   ngOnInit() {
     this.router.events.subscribe((event) => {

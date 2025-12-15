@@ -9,6 +9,9 @@ import { ChangeDetectorRef, Component, HostBinding, Input } from '@angular/core'
 export class CommonButton {
   @Input() text: string = 'Button';
   @Input() link: string = '';
+  @Input() icon: Icon = Icon.NONE;
+
+  Icon = Icon;
 
   @HostBinding('style.--bg-color') bgColor = '#14303dff';
   @HostBinding('style.--text-color') textColor = '#4fc3f7';
@@ -22,4 +25,9 @@ export class CommonButton {
     this.textColor = textColor;
     this.cdr.detectChanges();
   }
+}
+
+export enum Icon{
+  NONE,
+  FILE,
 }
