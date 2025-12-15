@@ -1,4 +1,42 @@
 h1{
     text-align: center;
     color: var(--accent-color);
+    margin-bottom: 0px;
+}
+
+.project-meta {
+    text-align: center;
+    color: var(--muted-text);
+    margin-top: 0;
+}
+
+.project-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+figure {
+  max-width: 400px;
+  margin: 1.5rem 0;
+}
+
+.image-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.image-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.image-center {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--accent-color);
 }
