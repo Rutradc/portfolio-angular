@@ -1,64 +1,83 @@
-<app-go-back-button></app-go-back-button>
 <article class="project">
-
-    <section class="project-header" id="scroll">
-        <h1>Projet The Cool Skaters</h1>
-        <p class="project-meta">
-            Projet scolaire · Full-stack
-        </p>
-        <p>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding.</p>
-        <p>Ce projet a été codé pendant ma formation avec deux autres personnes.</p>
-    </section>
-
-    <section class="project-section">
-      <h2>Développement</h2>
-      <p>
-        Technologies utilisées, organisation du code, défis techniques.
+  <section class="project-header" id="scroll">
+    <app-go-back-button></app-go-back-button>
+    <h1>Projet The Cool Skaters</h1>
+      <p class="project-meta">
+          Projet scolaire · Full-stack
       </p>
+      <p>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding</p>
+      <p>Ce projet a été codé pendant ma formation avec deux autres personnes</p>
+  </section>
 
-      <figure class="image-center">
-        <img src="assets/images/springSkateLogin.png" alt="Extrait du projet en fonctionnement">
-        <figcaption>Fonctionnalité clé en action</figcaption>
-      </figure>
-    </section>
+  <section class="project-section">
+    <h2>Développement</h2>
+    <h3>
+      Technologies utilisées
+    </h3>
+    <p>
+      Ce projet a été codé en <a href="https://www.java.com/fr/" target="_blank">Java</a> avec <a href="https://spring.io/" target="_blank">SpringBoot</a>, utilise <a href="https://hibernate.org/" target="_blank">Hibernate</a> en ORM pour la base de données en <a href="https://www.mysql.com/fr/" target="_blank">MySQL</a> et implémente une sandbox Paypal et un serveur <a href="https://tomcat.apache.org/" target="_blank">Tomcat</a> Externe (packaging en .war)
+    </p>
+    <h3>
+      Organisation du code
+    </h3>
+    <p>
+      L'architecture du projet est séparée en plusieurs couches et respecte le MVC
+    </p>
+    <ul>
+      <li>
+         Dossier model dans skateSite/model qui répertorie les modèles basés sur les entités de la base de données MySQL
+      </li>
+      <li>
+        Dossier controller dans skateSite/controller qui répertorie les controlleurs qui font le lien entre les modèles et les vues
+      </li>
+      <li>
+        Dossier jsp dans webapp/WEB-INF/jsp qui contient les fichiers jsp qui sont des templates HTML utilisés en Spring pour l'affichage des vues
+      </li>
+    </ul>
+    <!-- <markdown [data]="projectTree"></markdown> -->
+    <figure class="image-center">
+      <img src="assets/images/springSkateLogin.png" alt="Extrait du projet en fonctionnement">
+      <figcaption>Fonctionnalité clé en action</figcaption>
+    </figure>
+  </section>
 
-    <section class="project-section">
-      <h2>Contexte et objectif</h2>
-      <p>
-        Explication du problème à résoudre, du public cible, du cadre du projet.
-      </p>
+  <section class="project-section">
+    <h2>Contexte et objectif</h2>
+    <p>
+      Explication du problème à résoudre, du public cible, du cadre du projet.
+    </p>
 
-      <figure class="image-right">
-        <img src="assets/images/springSkateLogin.png" alt="Aperçu initial du projet">
-        <figcaption>Premières maquettes du projet</figcaption>
-      </figure>
+    <figure class="image-right">
+      <img src="assets/images/springSkateLogin.png" alt="Aperçu initial du projet">
+      <figcaption>Premières maquettes du projet</figcaption>
+    </figure>
 
-      <p>
-        Texte qui continue après l’image, elle fait partie du récit.
-      </p>
-    </section>
+    <p>
+      Texte qui continue après l’image, elle fait partie du récit.
+    </p>
+  </section>
 
-    <section class="project-section">
-      <h2>Conception et design</h2>
+  <section class="project-section">
+    <h2>Conception et design</h2>
 
-      <figure class="image-left">
-        <img src="assets/images/springSkateLogin.png" alt="Design final du projet">
-        <figcaption>Design final de l’interface</figcaption>
-      </figure>
+    <figure class="image-left">
+      <img src="assets/images/springSkateLogin.png" alt="Design final du projet">
+      <figcaption>Design final de l’interface</figcaption>
+    </figure>
 
-      <p>
-        Choix graphiques, UX, inspirations, contraintes.
-      </p>
-    </section>
+    <p>
+      Choix graphiques, UX, inspirations, contraintes.
+    </p>
+  </section>
 
-    <section class="project-section">
-      <h2>Bilan</h2>
-      <p>
-        Ce que tu as appris, difficultés rencontrées, améliorations possibles.
-      </p>
-    </section>
+  <section class="project-section">
+    <h2>Bilan</h2>
+    <p>
+      Ce que tu as appris, difficultés rencontrées, améliorations possibles.
+    </p>
+  </section>
 
-  </article>
+</article>
 
 <section>
     <h2>Description</h2>
