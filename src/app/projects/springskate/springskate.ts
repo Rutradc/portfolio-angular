@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { GoBackButton } from "../../buttons/go-back-button/go-back-button";
 
 @Component({
@@ -10,4 +9,49 @@ import { GoBackButton } from "../../buttons/go-back-button/go-back-button";
 })
 export class Springskate {
 
+  projectTree = `
+src
+│
+└── main
+    │
+    ├── java/com/spring/henallux/skateSite
+    │   │
+    │   ├── config
+    │   │
+    │   ├── configuration
+    │   │
+    │   ├── controller
+    │   │
+    │   ├── dataAccess
+    │   │   │
+    │   │   ├── dao
+    │   │   │
+    │   │   ├── entity
+    │   │   │
+    │   │   ├── repository
+    │   │   │
+    │   │   └── util
+    │   │       │
+    │   │       └── ProviderConverter.java
+    │   │
+    │   ├── model
+    │   │
+    │   ├── service
+    │   │
+    │   └── SkateSiteApplication.java
+    │
+    ├── resources
+    │
+    └── webapp
+        │
+        ├── css
+        │
+        ├── images
+        │
+        ├── WEB-INF
+        │   │
+        │   └── jsp
+        │
+        └── resources
+  `;
 }

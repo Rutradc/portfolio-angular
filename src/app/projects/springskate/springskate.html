@@ -6,7 +6,7 @@
           Projet scolaire · Full-stack
       </p>
       <p>Application web moderne d'e-commerce présentant différents articles sur le thème du skateboarding</p>
-      <p>Ce projet a été codé pendant ma formation avec deux autres personnes</p>
+      <p>Ce projet a été codé pendant mes études avec deux autres personnes</p>
   </section>
 
   <section class="project-section">
@@ -17,6 +17,10 @@
     <p>
       Ce projet a été codé en <a href="https://www.java.com/fr/" target="_blank">Java</a> avec <a href="https://spring.io/" target="_blank">SpringBoot</a>, utilise <a href="https://hibernate.org/" target="_blank">Hibernate</a> en ORM pour la base de données en <a href="https://www.mysql.com/fr/" target="_blank">MySQL</a> et implémente une sandbox Paypal et un serveur <a href="https://tomcat.apache.org/" target="_blank">Tomcat</a> Externe (packaging en .war)
     </p>
+    <figure class="image-right">
+      <pre class="mdDisplay mdFormat">{{ projectTree }}</pre>
+      <figcaption>Arborescence du projet</figcaption>
+    </figure>
     <h3>
       Organisation du code
     </h3>
@@ -25,16 +29,32 @@
     </p>
     <ul>
       <li>
-         Dossier model dans skateSite/model qui répertorie les modèles basés sur les entités de la base de données MySQL
+         Dossier model dans <span class="mdFormat">skateSite/model</span> qui répertorie les modèles basés sur les entités de la base de données MySQL
       </li>
       <li>
-        Dossier controller dans skateSite/controller qui répertorie les controlleurs qui font le lien entre les modèles et les vues
+        Dossier controller dans <span class="mdFormat">skateSite/controller</span> qui répertorie les controlleurs qui font le lien entre les modèles et les vues
       </li>
       <li>
-        Dossier jsp dans webapp/WEB-INF/jsp qui contient les fichiers jsp qui sont des templates HTML utilisés en Spring pour l'affichage des vues
+        Dossier jsp dans <span class="mdFormat">webapp/WEB-INF/jsp</span> qui contient les fichiers jsp qui sont des templates HTML utilisés en Spring pour l'affichage des vues et dossier css dans <span class="mdFormat">webapp/css</span> où l'on retrouve les différentes feuilles de style CSS des templates jsp
       </li>
     </ul>
-    <!-- <markdown [data]="projectTree"></markdown> -->
+    <p>
+      L'utilisation d'Hibernate a également été organisée selon une structure définie dans <span class="mdFormat">skateSite/dataAccess</span>
+    </p>
+    <ul>
+      <li>
+        Dossier dao dans <span class="mdFormat">skateSite/dataAccess/dao</span> consistant la couche business qui définit quelles actions sont possibles via un interface et son implémentation
+      </li>
+      <li>
+        Dossier entity dans <span class="mdFormat">skateSite/dataAccess/entity</span> définissant les entités présentes dans la base de données pour les requêtes de Hibernate
+      </li>
+      <li>
+        Dossier repository dans <span class="mdFormat">skateSite/dataAccess/repository</span> contenant les repository remplis automatiquement par Hibernate selon le nom et attributs donnés des méthodes déclarées
+      </li>
+      <li>
+        Dossier util dans <span class="mdFormat">skateSite/dataAccess/util</span> dans lequel se trouve le DozerBeanMapper utilisé dans <span class="mdFormat">ProviderConverter.java</span>
+      </li>
+    </ul>
     <figure class="image-center">
       <img src="assets/images/springSkateLogin.png" alt="Extrait du projet en fonctionnement">
       <figcaption>Fonctionnalité clé en action</figcaption>
@@ -53,7 +73,7 @@
     </figure>
 
     <p>
-      Texte qui continue après l’image, elle fait partie du récit.
+      Texte qui continue après l'image, elle fait partie du récit.
     </p>
   </section>
 
@@ -62,7 +82,7 @@
 
     <figure class="image-left">
       <img src="assets/images/springSkateLogin.png" alt="Design final du projet">
-      <figcaption>Design final de l’interface</figcaption>
+      <figcaption>Design final de l'interface</figcaption>
     </figure>
 
     <p>
