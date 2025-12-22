@@ -3,10 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { Tech, TechCard, TechType } from '../buttons/tech-card/tech-card';
 import { ProjectStatus, StatusCard } from '../buttons/status-card/status-card';
 import { GoToButton } from '../buttons/go-to-button/go-to-button';
-import { SkillList } from '../skill-list/skill-list';
 import { Git } from '../buttons/git-button/git-button';
-import { SkillListItem } from '../skill-list/SkillListItem';
 import { GoToRouteButton } from "../buttons/go-to-route-button/go-to-route-button";
+import { SkillList } from '../common/skill-list/skill-list';
+import { SkillListItem } from '../common/skill-list/SkillListItem';
 
 @Component({
   selector: 'app-home',

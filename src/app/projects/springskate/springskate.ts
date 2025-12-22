@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { GoBackButton } from "../../buttons/go-back-button/go-back-button";
+import { MdComponent } from "../../common/md-component/md-component";
 
 @Component({
   selector: 'app-springskate',
-  imports: [GoBackButton],
+  imports: [GoBackButton, MdComponent],
   templateUrl: './springskate.html',
   styleUrl: './springskate.css',
 })
