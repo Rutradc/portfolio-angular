@@ -11,10 +11,10 @@
   <section class="project-section">
     <h2>Description</h2>
     <p>
-      Ce projet a été réalisé dans le cadre de mes études lors d'un travail de groupe. Il a été développé par moi-même et deux autres étudiants.
+      Ce projet a été réalisé dans le cadre de mes études lors d'un travail de groupe. Il a été développé par moi-même et deux autres étudiants
     </p>
     <p>
-      L'objectif était de concevoir un site de e-commerce en s'appuyant sur les laboratoires réalisés en cours. Le développement devait être effectué dans l'environnement IntelliJ, en utilisant les frameworks Spring, Maven, Hibernate et JUnit, avec une connexion à une base de données MySQL. L'application devait également être déployée sur un serveur Tomcat.
+      L'objectif était de concevoir un site de e-commerce en s'appuyant sur les laboratoires réalisés en cours. Le développement devait être effectué dans l'environnement IntelliJ, en utilisant les frameworks Spring, Maven, Hibernate et JUnit, avec une connexion à une base de données MySQL. L'application devait également être déployée sur un serveur Tomcat
     </p>
   </section>
 
@@ -67,41 +67,91 @@
   </section>
 
   <section class="project-section">
+    <h2>Connection</h2>
+    <figure class="image-right screen">
+      <img src="assets/images/springSkateLogin-small.png" alt="Page de conenction">
+      <figcaption>Page de connection</figcaption>
+    </figure>
+    <p>
+      L'application est composée de plusieurs pages, et la première que l'on voit est celle-ci : la page de connection
+    </p>
+    <p>
+      Bien qu'il n'est pas nécessaire d'être connecté pour consulter le site, il reste néanmois recommandé de le faire car pour pouvoir passer commande, il faut être connecté
+    </p>
+    <p>
+      Cette page est assez simple, un formulaire de connection demandant d'insérer un login et un mot de passe afin de se connecter ou alors de créer un compte
+    </p>
+  </section>
+
+  <section class="project-section">
     <h2>Page Accueil</h2>
-    Le Concombre (Cucumis sativus) est une espèce de plantes à fleurs de la famille des Cucurbitacées. C'est une plante potagère herbacée, grimpante, de la même famille que la calebasse africaine, le melon ou la courge. C'est botaniquement un fruit qui est consommé comme un légume. Il est de la même espèce (Cucumis sativus) que le cornichon, consommé lui comme condiment. La plante, qui poussait naturellement au pied de l'Himalaya, aurait été domestiquée pour la première fois en Inde il y a au moins 3 000 ans.
+    <p>
+      Ensuite vient la page d'accueil, que l'on se soit connecté ou pas, elle reste accessible et comporte plusieurs éléments
+    </p>
+    <p>
+      Mais d'abord parlons du header et du footer :
+    </p>
+    <p>
+      Le footer contient un lien vers un page courte qui décrit l'entreprise qui utiliserait ce site d'e-commerce (entreprise factice pour le projet)
+    </p>
+    <p>
+      Le header, quant à lui, est bien plus intéressant, il permet de changer la langue du site selon le drapeau cliqué (la langue sélectionnée par défaut est la locale donnée par le navigateur), ensuite il y a un bouton Home qui permet de revenir à l'accueil
+    </p>
+    <p>
+      Après cela, il y a un lien vers le panier du client et enfin un texte permettant de se connecter ou déconnecter selon la connection de l'utilisateur
+    </p>
+    <p>
+      Quant à la page d'accueil, elle comporte le nom du site et toutes les catégories d'articles disponibles, le style de la page n'est pas très recherché mais ce n'était pas là le but du travail et cela se voit malheureusement sur deux pages du site dont celle-ci
+    </p>
+    <p>
+      À partir de cette page, nous pouvons accéder aux différents articles directement, comme le voudrait un bon site d'e-commerce
+    </p>
     <figure class="image-below">
       <img src="assets/images/springSkateHome.png" alt="Page Accueil">
       <figcaption>Page Accueil</figcaption>
     </figure>
-    <figure class="image-below">
-      <img src="assets/images/springSkateProductCategory.png" alt="Catégorie Article">
+    
+    <figure class="image-left screen">
+      <img src="assets/images/springSkateProductCategory-small.png" alt="Catégorie Article">
       <figcaption>Catégorie Article</figcaption>
     </figure>
+    <p>
+      Une fois arrivé sur une catégorie on peut voir directement les articles, leur nom, description et prix, ces noms sont traduits selon la langue choisie
+    </p>
+    <p>
+      Si le client tombe sur un article qui l'intéresse, il peut cliquer dessus et aller voir les détails du produit
+    </p>
   </section>
 
   <section class="project-section">
     <h2>Article</h2>
-    Capon Bridge est une ville située dans le comté de Hampshire, en Virginie-Occidentale, le long du Northwestern Turnpike (U. S. Highway 50), à l’ouest de Winchester, en Virginie. Lors du recensement de 2010, la ville était peuplée de 355 habitants
-    <figure class="image-below">
-      <img src="assets/images/springSkateProduct.png" alt="Détails Article">
+    <figure class="image-right screen">
+      <img src="assets/images/springSkateProduct-small.png" alt="Détails Article">
       <figcaption>Détails Article</figcaption>
     </figure>
-  </section>
-
-  <section class="project-section">
-    <h2>Login</h2>
-    <figure class="image-below">
-      <img src="assets/images/springSkateLogin.png" alt="Page Login">
-      <figcaption>Page Login</figcaption>
-    </figure>
+    <p>
+      Une fois sur la page de détails de l'article, l'utilisateur peut voir des informations en plus telles que la marque, la/les couleur(s), les dimensions/taille et enfin voir si le type de modèle
+    </p>
+    <p>
+      Mais cette page permet surtout d'ajouter l'article dans le panier via un bouton en bas de page
+    </p>
   </section>
 
   <section class="project-section">
     <h2>Panier</h2>
-    <figure class="image-below">
-      <img src="assets/images/springSkateCart.png" alt="Panier">
+    <figure class="image-left screen">
+      <img src="assets/images/springSkateCart-small.png" alt="Panier">
       <figcaption>Panier</figcaption>
     </figure>
+    <p>
+      Après avoir ajouté les articles désirés, le client peut aller dans son panier où il retrouvera lesdits articles
+    </p>
+    <p>
+      Le panier est accessible même sans article ajouté comme montré ci-dessous mais il est aussi accessible si l'utilisateur n'est pas connecté, cela est possible car le panier est gardé en session
+    </p>
+    <p>
+      Par contre, pour pouvoir continuer à partir de là, il faut se connecter, d'ailleurs si un utilisateur non connecté essaie de commander, il sera redirigé vers la page de connection
+    </p>
     <figure class="image-below">
       <img src="assets/images/springSkateCartEmpty.png" alt="Panier vide">
       <figcaption>Panier vide</figcaption>
@@ -110,28 +160,53 @@
 
   <section class="project-section">
     <h2>Paypal</h2>
-    <figure class="image-below">
-      <img src="assets/images/springSkatePaypal.png" alt="Sandbox Paypal">
+    <figure class="image-right screen">
+      <img src="assets/images/springSkatePaypal-small.png" alt="Sandbox Paypal">
       <figcaption>Sandbox Paypal</figcaption>
     </figure>
+    <p>
+      Nous voici à la dernière étape, celle du paiement
+    </p>
+    <p>
+      Ici ce n'est pas une vraie page paypal, seulement la sandbox, car ce projet n'a pas été créé dans un esprit de production et aussi car c'était une partie des consignes
+    </p>
+    <p>
+      Après s'être connecté et avoir payé la commande, le client est redirigé vers une page du site lui disant que le paiement a été effectué et à ce moment là, la commande est insérée en base de données et permettra par la suite de faire un historique des commandes
+    </p>
   </section>
 
   <section class="project-section">
     <h2>Conception et design</h2>
-
-    <figure class="image-below">
-      <img src="assets/images/springSkateLogin.png" alt="Design final du projet">
-      <figcaption>Design final de l'interface</figcaption>
-    </figure>
-
     <p>
-      Choix graphiques, UX, inspirations, contraintes.
+      Avant de créer l'application web, il a fallu analyser les besoins d'un tel projet, dans cette optique, nous avions réalisé un diagramme de classe qu'on retrouve ci-dessous
     </p>
+    <p>
+      En premier, il y a le <span class="mdFormat">Client</span>, qui représente l'utilisateur du site, toutes les données présentes ici sont demandées à la création d'un nouveau compte
+    </p>
+    <p>
+      Celui-ci n'a qu'un seul lien, au niveau de la <span class="mdFormat">Commande</span> qui représente une commande passée par un client (une fois le panier vidé après la confirmation d'une commande, les infos sont reprises ici)
+    </p>
+    <p>
+      La <span class="mdFormat">Commande</span> est datée (avec heure) et contient plusieurs lignes (des <span class="mdFormat">LigneCommande</span>) qui précisent le nombre d'articles commandés et si une promotion a été appliqué sur ce produit au moment de l'achat
+    </p>
+    <p>
+      Il y a bien sûr une classe <span class="mdFormat">Produit</span> qui reprend toutes les informations d'un article sauf celles qui peuvent être traduites car cela se trouve dans une autre classe : la classe <span class="mdFormat">Traduction</span>
+    </p>
+    <p>
+      La classe <span class="mdFormat">Traduction</span> a un lien avec le produit qu'il traduit et un autre lien avec le <span class="mdFormat">Langage</span> dans laquel il traduit
+    </p>
+    <figure class="image-below">
+      <img src="assets/images/springSkateDB.png" alt="Design final du projet">
+      <figcaption>Diagramme de classe du site</figcaption>
+    </figure>
   </section>
 
   <section class="project-section">
     <h2>Bilan</h2>
     <p>
-      Ce que tu as appris, difficultés rencontrées, améliorations possibles.
+      Ce programme m'a appris à coder avec Spring et Hibernate tout en utilisant une base de données MySQL, ce projet a fait partie des premiers travaux conséquents utilsant un framework et j'en ai appris beaucoup
+    </p>
+    <p>
+      Ce projet m'a appris à travailler en groupe en utilisant un Git, un logiciel de versioning et j'ai aussi beaucoup appris à débugger car cela doit toujours arriver surtout quand on débute avec une technologie
     </p>
   </section>
