@@ -10,8 +10,7 @@ import { MdComponent } from "../../common/md-component/md-component";
 })
 export class Springskate {
 
-  projectTree = `
-src
+  projectTree = `src
 │
 └── main
     │
@@ -53,6 +52,5 @@ src
         │   │
         │   └── jsp
         │
-        └── resources
-  `;
+        └── resources`;
 }
