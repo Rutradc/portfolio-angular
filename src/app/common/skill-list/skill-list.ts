@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { SkillListItem } from './SkillListItem';
 import { Skill } from './skill/skill';
+import { SkillListItem } from './SkillListItem';
 
 
 @Component({

@@ -1,2 +1,8 @@
 <!-- From Uiverse.io by kamehame-ha --> 
-<a class="btn" href={{link}} target="_blank">{{text}}</a>
+<a class="btn" href={{link}} target="_blank">
+    @switch(icon){
+        @case (Icon.NONE) {}
+        @case (Icon.FILE){<i class="fa-solid fa-file"></i>}
+    }
+    {{text}}
+</a>
