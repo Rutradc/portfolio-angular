@@ -69,10 +69,10 @@ export class Home {
         skill: 'Tomcat',
         link: 'https://tomcat.apache.org/'
       },
-      {
-        skill: 'Tailwind',
-        link: 'https://tailwindcss.com/'
-      },
+      // {
+      //   skill: 'Tailwind',
+      //   link: 'https://tailwindcss.com/'
+      // },
       {
         skill: 'Git',
         link: 'https://git-scm.com/'
@@ -177,6 +177,40 @@ export class Home {
     {
       name: 'CSS',
       type: TechType.FRONT
+    },
+  ]
+  infradaptTechList : Tech[] = [
+    {
+      name: 'React Native',
+      type: TechType.FRONT
+    },
+    {
+      name: 'React',
+      type: TechType.FRONT
+    },
+    {
+      name: 'HTML',
+      type: TechType.FRONT
+    },
+    {
+      name: 'CSS',
+      type: TechType.FRONT
+    },
+    {
+      name: 'NodeJS',
+      type: TechType.BACK
+    },
+    {
+      name: 'Express',
+      type: TechType.BACK
+    },
+    {
+      name: 'Sequelize',
+      type: TechType.DB
+    },
+    {
+      name: 'PostgreSQL',
+      type: TechType.DB
     },
   ]
 }

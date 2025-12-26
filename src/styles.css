@@ -11,8 +11,12 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "Lora", sans-serif;
     line-height: 1.6;
+}
+
+h1, h2, h3, h4{
+  font-family: "Poppins", sans-serif;
 }
 
 section {

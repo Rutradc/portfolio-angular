@@ -38,6 +38,10 @@ export class StatusCard implements OnInit{
         this.updateCSS('rgba(59, 130, 246, 0.10)', 'rgba(59, 130, 246, 1)');
         this.statusMessage = "Déployé";
         break;
+      case ProjectStatus.NOTDEPLOYED:
+        this.updateCSS('rgba(255, 38, 0, 0.1)', 'rgba(255, 38, 0, 1)');
+        this.statusMessage = "Non déployé";
+        break;
       default:
         break;
     }
@@ -46,6 +50,7 @@ export class StatusCard implements OnInit{
 
 export enum ProjectStatus {
   WIP,
+  NOTDEPLOYED,
   TEST,
   DEPLOYED,
 }
