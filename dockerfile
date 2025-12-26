@@ -6,6 +6,6 @@ RUN npm ci
 RUN ng build
 
 FROM nginx:alpine3.22
-WORKDIR /usr/share/nginx/html
-COPY --from=build /src/dist/portfolio-angular/browser .
-EXPOSE 4200
+COPY --from=build /src/dist/portfolio-angular/browser /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
