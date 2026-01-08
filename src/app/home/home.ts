@@ -213,4 +213,36 @@ export class Home {
       type: TechType.DB
     },
   ]
+  listomoraTechList : Tech[] = [
+    {
+      name: 'HTML',
+      type: TechType.FRONT
+    },
+    {
+      name: 'CSS',
+      type: TechType.FRONT
+    },
+    {
+      name: 'C#',
+      type: TechType.BACK
+    },
+    {
+      name: 'SQLServer',
+      type: TechType.DB
+    },
+  ]
+  toDoTechList : Tech[] = [
+    {
+      name: 'React',
+      type: TechType.FRONT
+    },
+    {
+      name: 'HTML',
+      type: TechType.FRONT
+    },
+    {
+      name: 'CSS',
+      type: TechType.FRONT
+    },
+  ]
 }

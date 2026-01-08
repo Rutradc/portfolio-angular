@@ -6,11 +6,6 @@
   <h2>Projets en solo</h2>
   <div class="projects">
     <div class="project">
-      <h3>Application To-Do</h3>
-      <span>Application web moderne de gestion de tâches construite avec React et stockage local</span>
-      <app-status-card [status]="ProjectStatus.WIP"></app-status-card>
-    </div>
-    <div class="project">
       <h3>Portfolio personnel</h3>
       <span><b>Le site sur lequel vous êtes en ce moment</b></span>
       <span>Simple application front-end codée en Angular faisant office de site vitrine</span>
@@ -27,6 +22,36 @@
       </a>
       <!-- <app-git-button [git]="Git.GitLab" [link]="'https://github.com/Rutradc/portfolio-angular'"></app-git-button> -->
       <app-status-card [status]="ProjectStatus.DEPLOYED"></app-status-card>
+    </div>
+    <div class="project">
+      <h3>Listomora</h3>
+      <span>La liste de courses qui se crée comme par magie</span>
+      <span>Application web de gestion de courses et de recettes</span>
+      <span>Projet créé en formation</span>
+      <div class="technos">
+        @for (tech of listomoraTechList; track $index){
+          <app-tech-card [tech]="tech.name" [techType]="tech.type"></app-tech-card>
+        }
+      </div>
+
+      <!-- <a href="https://github.com/Rutradc/" 
+        target="_blank"
+        class="project-link">
+        <i class="fab fa-github"></i> Voir sur GitHub
+      </a> -->
+      <app-status-card [status]="ProjectStatus.WIP"></app-status-card>
+    </div>
+  </div>
+  <div class="projects">
+    <div class="project">
+      <h3>Application To-Do</h3>
+      <span>Application web moderne de gestion de tâches construite avec React et stockage local</span>
+      <div class="technos">
+        @for (tech of toDoTechList; track $index){
+          <app-tech-card [tech]="tech.name" [techType]="tech.type"></app-tech-card>
+        }
+      </div>
+      <app-status-card [status]="ProjectStatus.WIP"></app-status-card>
     </div>
   </div>
 </section>
