@@ -40,6 +40,10 @@ export class Home {
       //   link: 'https://nextjs.org/'
       // },
       {
+        skill: 'ASP.NET Core',
+        link: ''
+      },
+      {
         skill: 'ABP',
         link: 'https://abp.io/'
       }
@@ -227,7 +231,15 @@ export class Home {
       type: TechType.BACK
     },
     {
+      name: 'ASP.NET Core',
+      type: TechType.BACK
+    },
+    {
       name: 'SQLServer',
+      type: TechType.DB
+    },
+    {
+      name: 'EntityFramework',
       type: TechType.DB
     },
   ]
