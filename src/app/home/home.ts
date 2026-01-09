@@ -28,6 +28,10 @@ export class Home {
         link: 'https://nodejs.org/en'
       },
       {
+        skill: 'Express',
+        link: ''
+      },
+      {
         skill: 'Spring',
         link: 'https://spring.io/'
       },
@@ -56,6 +60,22 @@ export class Home {
       {
         skill: 'Hibernate',
         link: 'https://hibernate.org/'
+      },
+      {
+        skill: 'Sequelize',
+        link: ''
+      },
+      {
+        skill: 'EntityFramework',
+        link: ''
+      },
+      {
+        skill: 'JDBC',
+        link: ''
+      },
+      {
+        skill: 'ADO.NET',
+        link: ''
       },
       {
         skill: 'SqlServer',
