@@ -205,6 +205,10 @@ export class Home {
   ]
   infradaptTechList : Tech[] = [
     {
+      name: 'JavaScript',
+      type: TechType.FULL
+    },
+    {
       name: 'React Native',
       type: TechType.FRONT
     },
