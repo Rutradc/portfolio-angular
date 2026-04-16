@@ -251,6 +251,10 @@ export class Home {
       type: TechType.FRONT
     },
     {
+      name: 'Blazor',
+      type: TechType.FRONT
+    },
+    {
       name: 'C#',
       type: TechType.BACK
     },
