@@ -256,7 +256,7 @@ export class Home {
     },
     {
       name: 'C#',
-      type: TechType.BACK
+      type: TechType.FULL
     },
     {
       name: 'ASP.NET Core',
@@ -269,6 +269,32 @@ export class Home {
     {
       name: 'EntityFramework',
       type: TechType.DB
+    },
+  ]
+  technoPokerTechList : Tech[] = [
+    {
+      name: 'Angular',
+      type: TechType.FRONT
+    },
+    {
+      name: 'TypeScript',
+      type: TechType.FRONT
+    },
+    {
+      name: 'HTML',
+      type: TechType.FRONT
+    },
+    {
+      name: 'CSS',
+      type: TechType.FRONT
+    },
+    {
+      name: 'Python',
+      type: TechType.BACK
+    },
+    {
+      name: 'Socketio',
+      type: TechType.BACK
     },
   ]
   toDoTechList : Tech[] = [

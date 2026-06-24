@@ -85,4 +85,29 @@
       <app-status-card [status]="ProjectStatus.NOTDEPLOYED"></app-status-card>
     </div>
   </div>
+
+  <div class="projects">
+    <div class="project">
+      <h3>TechnoPoker</h3>
+      <span>Jeu de poker fait en formation avec <a href="https://github.com/Rs-appez" target="_blank">Appez</a></span>
+      <span>Ce projet a été codé pendant une formation à TechnofuturTIC en utilisant des websockets</span>
+      <div class="technos">
+        @for (tech of technoPokerTechList; track $index){
+          <app-tech-card [tech]="tech.name" [techType]="tech.type"></app-tech-card>
+        }
+      </div>
+      <app-go-to-button [message]="'Démo'" [link]= "'https://poker.arthur-declerck.be'"></app-go-to-button>
+      <a href="https://github.com/Rutradc/technopoker-angular" 
+        target="_blank"
+        class="project-link">
+        <i class="fab fa-github"></i> Voir le front sur GitHub
+      </a>
+      <a href="https://github.com/Rs-appez/techno_poker_serv" 
+        target="_blank"
+        class="project-link">
+        <i class="fab fa-github"></i> Voir le back sur GitHub
+      </a>
+      <app-status-card [status]="ProjectStatus.TEST"></app-status-card>
+    </div>
+  </div>
 </section>
