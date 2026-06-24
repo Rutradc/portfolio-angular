@@ -7,10 +7,6 @@ services:
       build: .
       ports:
         - "4200:4200"
-      environment:
-        VIRTUAL_HOST: www.arthur-declerck.be
-        VIRTUAL_PORT: 4200
-        LETSENCRYPT_HOST: www.arthur-declerck.be
       networks:
       - portfolio-network
 
